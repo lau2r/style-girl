@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>compra</title>
+    <link rel="stylesheet" href="./css/STYLECOM.css">
+</head>
+<body>
+    <div class="checkout-process">
+        <div class="header">
+            <h2>Proceso para realizar la compra</h2>
+            <img src="./css/img/girl.jpg" alt="Style Girl Logo">
+        </div>
+
+        <form class="checkout-form" action="recibircompra.php" method="post">
+            <label for="city">Ciudad</label>
+            <input type="text" id="city" name="ciudad">
+
+            <label for="contact-phone">NOMBRE DEL PRODUCTO</label>
+            <input type="tel" id="contact-phone" name="nom_producto">
+
+
+            <label for="contact-phone">Teléfono de contacto</label>
+            <input type="tel" id="contact-phone" name="telefono">
+
+            <label for="address">Dirección</label>
+            <input type="text" id="address" name="direccion">
+
+            <div class="summary">
+                <span>Cantidad de productos:</span>
+                <span>Valor total a pagar: $</span>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div class="footer">
+            Su pedido llegará en 0 días hábiles.
+            Gracias por su compra en Style Girl.
+        </div>
+    </div>
+</body>
+</html>
